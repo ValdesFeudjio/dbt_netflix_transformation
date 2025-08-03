@@ -1,3 +1,7 @@
+{{ config(
+    materialized='table'
+) }}
+
 with raw_rating as (
     select *
     from MOVILENS.RAW.RAW_RATINGS
